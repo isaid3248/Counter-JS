@@ -1,19 +1,55 @@
-h1{
-    display: inline-block;
-    width: 100px;
-    height: 150px;
-    background: blue;
-    border: 2px solid green;
+.screen {
+    position: fixed ;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    height: 120px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: dodgerblue;
+    font-size: 7rem;
+    text-align: right;
+    padding-right: 20px;
+
 }
-div{
-    display: inline-block;
-    width: 100px;
+
+.buttons {
+    position: fixed;
+    top: calc(30% + 120px);
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+button {
+    width: 50px;
     height: 50px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 2rem;
+    margin: 20px;
+    color: white;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.negative {
     background: red;
-    border: 1rem solid yellow;
-    border-radius: 50%;
-    border-top: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;;
-    margin: 2rem;
-    padding: 1rem;
+    
+}
+
+.positive {
+    background: limegreen;
 }
